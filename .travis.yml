@@ -1,0 +1,10 @@
+# use sudo permission
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t lgxkevin/dockerWithReact -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true lgxkevin/dockerWithReact npm run test
