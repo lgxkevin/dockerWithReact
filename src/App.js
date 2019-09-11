@@ -9,6 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           New feature branch <code>src/App.js</code> and save to reload.
+          New version
         </p>
         <a
           className="App-link"
